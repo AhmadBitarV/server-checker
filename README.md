@@ -12,12 +12,3 @@ Explicit Requirements:
     ○ Make servers list sortable by name / distance
     
 ● App must work on all modern browsers + IE11
-
-
-Implicit Requirements:
-
-● App must be production ready - (functionality, performance, error handling etc.)
-
-● There is no design provided but make it visually appealing.
-
-
