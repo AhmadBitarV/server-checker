@@ -1,0 +1,11 @@
+@import "../Scss/main.scss";
+
+.ErrorMessage {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  color: var(--color-red-light);
+  background-color: var(--color-gray-light-3);
+  font-size: 1.5rem;
+}

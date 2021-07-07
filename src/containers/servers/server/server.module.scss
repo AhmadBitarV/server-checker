@@ -1,0 +1,59 @@
+@import "../../../Scss/main.scss";
+
+.server {
+  width: 80%;
+  margin: 0 auto;
+  list-style: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 100ms;
+
+  &__bar {
+    display: block;
+    background-color: rgba(var(--color-black-rgb), 0.1);
+    width: 80%;
+    margin: 0 auto;
+    height: 1px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: var(--color-blue-light);
+      width: 0;
+      left: auto;
+      height: 1px;
+      transition: all 500ms;
+    }
+  }
+
+  &:hover + &__bar::before {
+    width: 80%;
+  }
+
+  &:not(:first-of-type):hover {
+    background-color: var(--color-blue-transparent);
+  }
+
+  &__infobox {
+    display: inline-block;
+    width: 50%;
+
+    &:last-of-type {
+      display: inline;
+    }
+  }
+
+  @include respond(phone) {
+    & {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+.solid {
+  font-weight: 700;
+  color: var(--color-blue-light);
+  border-bottom: 1px solid rgba(var(--color-black-rgb), 0.1);
+  cursor: auto;
+}

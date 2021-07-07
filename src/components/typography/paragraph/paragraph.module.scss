@@ -1,0 +1,10 @@
+@import "../../../Scss/main.scss";
+
+.Paragraph {
+  font-size: 1.75rem;
+  font-weight: inherit;
+
+  &:not(:last-child) {
+    margin: 1rem 0;
+  }
+}
